@@ -1,0 +1,16 @@
+echo "# shell-scripting" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/likhigowda/shell-scripting.git
+git remote -v
+git push -u origin main
+
+
+to check default shell:
+echo $0
+
+to change default shell:
+cat /etc/shells    --> to check available shells
+chsh -s /bin/bash  --> to change default shell
